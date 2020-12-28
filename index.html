@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - RWD: Technical Documentation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main id="main-doc">
+<nav id="navbar">
+	<header style="color: #1F1300;">Scala Documentation</header>
+	<ul>
+		<li><a class="nav-link" href="#Basics_of_Scala">Basics of Scala</a></li>
+		<li><a class="nav-link" href="#Hello_World!">Hello World!</a></li>
+		<li><a class="nav-link" href="#Variables">Variables</a></li>
+		<li><a class="nav-link" href="#Declaring_a_Variable">Declaring a Variable</a></li>
+		<li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+		<li><a class="nav-link" href="#More_Info">More Info</a></li>
+		<li><a class="nav-link" href="#Reference">Reference</a></li>
+	</ul>
+</nav>
+<section class="main-section" id="Basics_of_Scala">
+    <header>Basics of Scala</header>
+    <p>Scala is a general-purpose programming language providing support for both object-oriented programming and functional programming.</p>
+		<p>Scala...</p>
+		<ul>
+			<li>Is a high level programming language</li>
+			<li>Is statically typed</li>
+			<li>Syntax is concise but still readable — we call it expressive</li>
+			<li>Supports the object-oriented programming (OOP) paradigm</li>
+			<li>Supports the functional programming (FP) paradigm</li>
+			<li>Code results in .class files that run on the Java Virtual Machine (JVM)</li>
+			<li>Is able to use JAVA libraries</li>
+		</ul>
+  </section>
+	
+  <section class="main-section" id="Hello_World!">
+    <header>Hello World!</header>
+		<p>"Hello World" is the first program developers use to test systems. So let's write a function that displays "Hello World!" in Scala:</p>
+		<code><b>object</b> Hello <b>extends</b> App {
+    println("Hello, world")
+    }
+		</code>
+		<p>*Object can store variables and methods. The object name should match the filename.</p>
+  </section>
+	
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+		<p>Scala has two types of variables:</p>
+		<ul>
+			<li>val is an immutable variable that should be preferred</li>
+			<li>var creates a mutable variable, and should only be used when there is a specific reason to use it</li>
+		</ul>
+	</section>
+	
+	<section class="main-section" id="Declaring_a_Variable">
+		<header>Declaring a Variable</header>
+		<p>In Scala, you typically create variables without declaring their type. This is called <i>type inference.</i><p>
+		<code><b>val</b> x = 1
+			<b>val</b> s = "a string"
+			<b>val</b> p = new Person("Regina")
+		</code>
+		<p>However, if you wanted to, you can explicitly declare variables with their types. Here is a list of different types in Scala:</p>
+		<ul>
+			<li>Int - Integer
+</li>
+			<li>Double - Decimal
+</li>
+			<li>Char - Letters</li>
+			<li>String - Sequence of Chars (words)
+</li>
+			<li>Boolean - True or False
+</li>
+			<li>Unit - Has no value
+</li>
+		</ul>
+		<code><b>val</b> x: Int = 1
+			<b>val</b> s: String = "a string"
+			<b>val</b> p: Person = new Person("Regina")
+		</code>
+  </section>
+	
+  <section class="main-section" id="Control_Structures">
+    <header>Control Structures</header>
+		<p>Scala has many control stuctures such as if/else, match expressions, try/catch, for loops and expressions, and while and do/ while. We are going to focus on if/else and for loops and expressions.</p>
+		<p>If/Else control structure is similar to other languages:</p>
+		<code><b>if</b> (test1) {
+    doA()
+			} <b>else if</b> (test2) {
+    doB()
+			} <b>else if</b> (test3) {
+    doC()
+			} <b>else</b> {
+    doD()
+			}
+		</code>
+	<p>The if/else construct returns a value, so, among other things, you can use it as a ternary operator:</p>
+		<code><b>val</b> x = <b>if</b> (a < b) a <b>else</b> b
+		</code>
+	<p>For Loops and Expressions allows you to efficiently write a loop that needs to execute a specific number of times.</p>
+	<code><b>for</b> (arg <- args) println(arg)
+			// "x to y" syntax
+				<b>for</b> (i <- 0 to 5) println(i)
+			// "x to y by" syntax
+				<b>for</b> (i <- 0 to 10 by 2) println(i)
+		</code>
+  </section>
+
+  <section class="main-section" id="More_Info">
+    <header>More Info</header>
+		<p>If you want more information regarding Scala, go to the <a href="https://docs.scala-lang.org/overviews/scala-book/introduction.html" target="_blank">Official Scala Documentation Website</a>.</p>
+  </section>
+
+	<section class="main-section" id="Reference">
+		<header>Reference</header>
+		<p>This information are excerpts from the <cite>Official Scala Documentation Website </cite>and my knowledge from previous courses.</p>
+	</section>	
+</main>
+<!-- partial -->
+  
+</body>
+</html>
